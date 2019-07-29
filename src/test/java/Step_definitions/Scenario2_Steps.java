@@ -53,7 +53,7 @@ public class Scenario2_Steps extends BaseClass {
 
         //Assert.assetEquals(driver.findElementByXpath("//android.widget.TextView[@text='Cel1']").getText, "data.get(0).get(2)")');
 
-        //Assert.assetEquals(driver.findElementByXpath("//android.widget.TextView[@text='Del1']").getText, "data.get(0).get(2)")');
+        //Assert.assetEquals(driver.findElementByXpath("//android.Need to verify .TextView[@text='Del1']").getText, "data.get(0).get(2)")');
 
     }
 }
