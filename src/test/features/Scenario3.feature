@@ -1,5 +1,3 @@
-
-
 @wif
 Feature: Add and delete new lists of items under the List
 
@@ -18,7 +16,7 @@ Feature: Add and delete new lists of items under the List
    # Then  The item should be deleted from the list
 
     Examples:
-      | Lists      | Items                |
+      | Lists     | Items                |
       | Sainsbury | Grocery:Fruit:Dairy  |
       | Tesco     | Grocery:Fruit:Dairy  |
       |           | Dairy:Milk:Chocolate |

@@ -3,9 +3,8 @@ package Step_definitions;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
@@ -18,7 +17,8 @@ public class BaseClass {
     AndroidDriver driver;
     // public AndroidDriver driver;
 
-    @Before
+    // Boolean isvalidated = false;
+    @BeforeClass
     public void setup() {
         try {
 
@@ -54,14 +54,17 @@ public class BaseClass {
         }
     }
 
-    @Test
-    public void test() {
+    // @Test
+    //public void test() {
+    //  if(!isvalidated)
+    //   {
+    //   driver.findElementById("org.openintents.shopping:id/layout_choice_bottom").click();
+    //    isvalidated=true;
 
-        driver.findElementById("org.openintents.shopping:id/layout_choice_bottom").click();
+    //}}
 
-    }
 
-    @After
+    @AfterClass
     public void teardown() {
         driver.closeApp();
     }

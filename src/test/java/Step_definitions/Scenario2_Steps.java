@@ -49,11 +49,33 @@ public class Scenario2_Steps extends BaseClass {
     @Then("^The Items should be displayed in chosen sorting oder$")
     public void the_Items_should_be_displayed_in_chosen_sorting_oder() throws Throwable {
 
-        //Assert.assetEquals(driver.findElementByXpath("//android.widget.TextView[@text='Bel1']").getText, "data.get(0).get(2)")');
+//for{
+        //{Assert.assetEquals(driver.findElementByXpath("//android.widget.TextView[@text= str]").getText, map.get(strr)")');
 
         //Assert.assetEquals(driver.findElementByXpath("//android.widget.TextView[@text='Cel1']").getText, "data.get(0).get(2)")');
 
         //Assert.assetEquals(driver.findElementByXpath("//android.Need to verify .TextView[@text='Del1']").getText, "data.get(0).get(2)")');
+/**
 
+ //  for (int i = 0; i < strArray.length; i++)
+ List<String> myList = new ArrayList<String>();
+ Map<String,String> strgmap = new Map<String,String>();
+ for (String str : Items) {
+ driver.findElementById("org.openintents.shopping:id/autocomplete_add_item").sendKeys(str);
+ driver.findElementById("org.openintents.shopping:id/button_add_item").click();
+ myList.add(str);
+ strgmap.put(str ,str);
+
+ System.out.println(str);
+ System.out.println(myList.get(0));
+ }
+ for(String strr: myList)
+ {
+ String testvalue=strgmap.get(strr);
+ String exactvalue=strr;
+ }
+ System.out.println(myList.size());
+ }
+ */
     }
 }
