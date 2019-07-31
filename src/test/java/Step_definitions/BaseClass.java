@@ -3,8 +3,8 @@ package Step_definitions;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.AndroidMobileCapabilityType;
 import io.appium.java_client.remote.MobileCapabilityType;
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.File;
@@ -15,10 +15,8 @@ public class BaseClass {
 
 
     AndroidDriver driver;
-    // public AndroidDriver driver;
 
-    // Boolean isvalidated = false;
-    @BeforeClass
+    @BeforeAll
     public void setup() {
         try {
 
@@ -44,7 +42,7 @@ public class BaseClass {
 
             driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps);
 
-            // driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+            //driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
         } catch (Exception exp) {
             System.out.println("Cause is : " + exp.getCause());
@@ -54,17 +52,7 @@ public class BaseClass {
         }
     }
 
-    // @Test
-    //public void test() {
-    //  if(!isvalidated)
-    //   {
-    //   driver.findElementById("org.openintents.shopping:id/layout_choice_bottom").click();
-    //    isvalidated=true;
-
-    //}}
-
-
-    @AfterClass
+    @AfterAll
     public void teardown() {
         driver.closeApp();
     }
@@ -72,7 +60,6 @@ public class BaseClass {
     public AndroidDriver getDriver() {
         return driver;
     }
-
 
 }
 

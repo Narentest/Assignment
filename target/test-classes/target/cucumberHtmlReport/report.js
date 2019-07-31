@@ -750,7 +750,7 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "Enter name of new shopping list  name as \"Argos\"",
+  "name": "Enter name of new shopping list  name as \"Iceland\"",
   "keyword": "And "
 });
 formatter.step({
@@ -758,54 +758,8 @@ formatter.step({
   "name": "Add the items to list \"\u003cItems\u003e\" should be added to list and saved",
   "keyword": "Then "
 });
-formatter.step({
-  "comments": [
-    {
-      "line": 8,
-      "value": "#Sort the list and validate the sorting of the list items"
-    }
-  ],
-  "line": 9,
-  "name": "User landed on the Home Screen of OI Shopping List app and tapped on Overflow menu icon on the right hand side screen",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "Select the \"Settings\" option",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 11,
-  "name": "User select the \"Sort order\" option",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 12,
-  "name": "Select \"alphabetical\" option",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 13,
-  "name": "Return to the \"Home Screen\" by tapping the \"Back button\" of mobile device",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 14,
-  "name": "Tap on the Hamburger menu icon on left hand side screen",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 15,
-  "name": "Tap on the \"Iceland\" list",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 16,
-  "name": "The Items should be displayed in chosen sorting oder",
-  "keyword": "Then "
-});
 formatter.examples({
-  "line": 17,
+  "line": 8,
   "name": "",
   "description": "",
   "id": "adding-new-items-list,-sorting-and-validating-the-list-of-items;create-a-list-of-items-under-the-list;",
@@ -814,35 +768,35 @@ formatter.examples({
       "cells": [
         "Items"
       ],
-      "line": 18,
+      "line": 9,
       "id": "adding-new-items-list,-sorting-and-validating-the-list-of-items;create-a-list-of-items-under-the-list;;1"
     },
     {
       "cells": [
-        "Watch"
+        "Grocery"
       ],
-      "line": 19,
+      "line": 10,
       "id": "adding-new-items-list,-sorting-and-validating-the-list-of-items;create-a-list-of-items-under-the-list;;2"
     },
     {
       "cells": [
-        "Mobile"
+        "Fruit"
       ],
-      "line": 20,
+      "line": 11,
       "id": "adding-new-items-list,-sorting-and-validating-the-list-of-items;create-a-list-of-items-under-the-list;;3"
     },
     {
       "cells": [
-        "Laptop"
+        "Dairy"
       ],
-      "line": 21,
+      "line": 12,
       "id": "adding-new-items-list,-sorting-and-validating-the-list-of-items;create-a-list-of-items-under-the-list;;4"
     }
   ],
   "keyword": "Examples"
 });
 formatter.scenario({
-  "line": 19,
+  "line": 10,
   "name": "Create a list of items under the List",
   "description": "",
   "id": "adding-new-items-list,-sorting-and-validating-the-list-of-items;create-a-list-of-items-under-the-list;;2",
@@ -861,94 +815,16 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "Enter name of new shopping list  name as \"Argos\"",
+  "name": "Enter name of new shopping list  name as \"Iceland\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 7,
-  "name": "Add the items to list \"Watch\" should be added to list and saved",
+  "name": "Add the items to list \"Grocery\" should be added to list and saved",
   "matchedColumns": [
     0
   ],
   "keyword": "Then "
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 8,
-      "value": "#Sort the list and validate the sorting of the list items"
-    }
-  ],
-  "line": 9,
-  "name": "User landed on the Home Screen of OI Shopping List app and tapped on Overflow menu icon on the right hand side screen",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "Select the \"Settings\" option",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 11,
-  "name": "User select the \"Sort order\" option",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 12,
-  "name": "Select \"alphabetical\" option",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 13,
-  "name": "Return to the \"Home Screen\" by tapping the \"Back button\" of mobile device",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 14,
-  "name": "Tap on the Hamburger menu icon on left hand side screen",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 15,
-  "name": "Tap on the \"Iceland\" list",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 16,
-  "name": "The Items should be displayed in chosen sorting oder",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
 });
 formatter.match({});
 formatter.result({
@@ -967,7 +843,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.scenario({
-  "line": 20,
+  "line": 11,
   "name": "Create a list of items under the List",
   "description": "",
   "id": "adding-new-items-list,-sorting-and-validating-the-list-of-items;create-a-list-of-items-under-the-list;;3",
@@ -986,94 +862,16 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "Enter name of new shopping list  name as \"Argos\"",
+  "name": "Enter name of new shopping list  name as \"Iceland\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 7,
-  "name": "Add the items to list \"Mobile\" should be added to list and saved",
+  "name": "Add the items to list \"Fruit\" should be added to list and saved",
   "matchedColumns": [
     0
   ],
   "keyword": "Then "
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 8,
-      "value": "#Sort the list and validate the sorting of the list items"
-    }
-  ],
-  "line": 9,
-  "name": "User landed on the Home Screen of OI Shopping List app and tapped on Overflow menu icon on the right hand side screen",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 10,
-  "name": "Select the \"Settings\" option",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 11,
-  "name": "User select the \"Sort order\" option",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 12,
-  "name": "Select \"alphabetical\" option",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 13,
-  "name": "Return to the \"Home Screen\" by tapping the \"Back button\" of mobile device",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 14,
-  "name": "Tap on the Hamburger menu icon on left hand side screen",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 15,
-  "name": "Tap on the \"Iceland\" list",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 16,
-  "name": "The Items should be displayed in chosen sorting oder",
-  "keyword": "Then "
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
 });
 formatter.match({});
 formatter.result({
@@ -1092,7 +890,7 @@ formatter.result({
   "status": "undefined"
 });
 formatter.scenario({
-  "line": 21,
+  "line": 12,
   "name": "Create a list of items under the List",
   "description": "",
   "id": "adding-new-items-list,-sorting-and-validating-the-list-of-items;create-a-list-of-items-under-the-list;;4",
@@ -1111,66 +909,602 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "Enter name of new shopping list  name as \"Argos\"",
+  "name": "Enter name of new shopping list  name as \"Iceland\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 7,
-  "name": "Add the items to list \"Laptop\" should be added to list and saved",
+  "name": "Add the items to list \"Dairy\" should be added to list and saved",
   "matchedColumns": [
     0
   ],
   "keyword": "Then "
 });
-formatter.step({
-  "comments": [
-    {
-      "line": 8,
-      "value": "#Sort the list and validate the sorting of the list items"
-    }
-  ],
-  "line": 9,
-  "name": "User landed on the Home Screen of OI Shopping List app and tapped on Overflow menu icon on the right hand side screen",
-  "keyword": "When "
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.scenario({
+  "line": 15,
+  "name": "Sort the list and validate the sorting of the list items",
+  "description": "",
+  "id": "adding-new-items-list,-sorting-and-validating-the-list-of-items;sort-the-list-and-validate-the-sorting-of-the-list-items",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
-  "line": 10,
+  "line": 16,
+  "name": "User landed on the Home Screen of OI Shopping List app and tapped on Overflow menu icon on the right hand side screen",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 17,
   "name": "Select the \"Settings\" option",
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 18,
   "name": "User select the \"Sort order\" option",
-  "keyword": "And "
+  "keyword": "When "
 });
 formatter.step({
-  "line": 12,
+  "line": 19,
   "name": "Select \"alphabetical\" option",
   "keyword": "And "
 });
 formatter.step({
-  "line": 13,
+  "line": 20,
   "name": "Return to the \"Home Screen\" by tapping the \"Back button\" of mobile device",
   "keyword": "And "
 });
 formatter.step({
-  "line": 14,
+  "line": 21,
   "name": "Tap on the Hamburger menu icon on left hand side screen",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 22,
   "name": "Tap on the \"Iceland\" list",
   "keyword": "And "
 });
 formatter.step({
-  "line": 16,
+  "line": 23,
   "name": "The Items should be displayed in chosen sorting oder",
   "keyword": "Then "
 });
 formatter.match({});
 formatter.result({
   "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.uri("Scenario3.feature");
+formatter.feature({
+  "line": 2,
+  "name": "Add and delete new lists of items under the List",
+  "description": "",
+  "id": "add-and-delete-new-lists-of-items-under-the-list",
+  "keyword": "Feature",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@wif"
+    }
+  ]
+});
+formatter.scenarioOutline({
+  "comments": [
+    {
+      "line": 5,
+      "value": "#  Given  Once app got launched on the right side radiobutton to choose the preferable layout"
+    }
+  ],
+  "line": 7,
+  "name": "Create lists of items under the List and delete one item among them",
+  "description": "",
+  "id": "add-and-delete-new-lists-of-items-under-the-list;create-lists-of-items-under-the-list-and-delete-one-item-among-them",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 8,
+  "name": "User launched the OI Shopping List app and tapped on Hamburger menu icon on left hand side screen",
+  "keyword": "Given "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 9,
+      "value": "# 3 line menu bar or Navigation icon"
+    }
+  ],
+  "line": 10,
+  "name": "Tap on the \"New list\" option under the List header",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "Enter name of new shopping list  name as \"\u003cLists\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "Add the items to list \"\u003cItems\u003e\" should be added to list and saved",
+  "keyword": "Then "
+});
+formatter.examples({
+  "comments": [
+    {
+      "line": 13,
+      "value": "#  When  Checked the \"Dairy\" item to delete an item"
+    },
+    {
+      "line": 14,
+      "value": "# And   User tapped on the Clean up list icon on the top menu bar"
+    },
+    {
+      "line": 15,
+      "value": "#And   Tap on the \"Shopping\" option to delete the first one item"
+    },
+    {
+      "line": 16,
+      "value": "# Then  The item should be deleted from the list"
+    }
+  ],
+  "line": 18,
+  "name": "",
+  "description": "",
+  "id": "add-and-delete-new-lists-of-items-under-the-list;create-lists-of-items-under-the-list-and-delete-one-item-among-them;",
+  "rows": [
+    {
+      "cells": [
+        "Lists",
+        "Items"
+      ],
+      "line": 19,
+      "id": "add-and-delete-new-lists-of-items-under-the-list;create-lists-of-items-under-the-list-and-delete-one-item-among-them;;1"
+    },
+    {
+      "cells": [
+        "Sainsbury",
+        "Grocery:Fruit:Dairy"
+      ],
+      "line": 20,
+      "id": "add-and-delete-new-lists-of-items-under-the-list;create-lists-of-items-under-the-list-and-delete-one-item-among-them;;2"
+    },
+    {
+      "cells": [
+        "Tesco",
+        "Grocery:Fruit:Dairy"
+      ],
+      "line": 21,
+      "id": "add-and-delete-new-lists-of-items-under-the-list;create-lists-of-items-under-the-list-and-delete-one-item-among-them;;3"
+    },
+    {
+      "cells": [
+        "",
+        "Dairy:Milk:Chocolate"
+      ],
+      "line": 22,
+      "id": "add-and-delete-new-lists-of-items-under-the-list;create-lists-of-items-under-the-list-and-delete-one-item-among-them;;4"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.background({
+  "line": 4,
+  "name": "app get launched choose the",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.scenario({
+  "line": 20,
+  "name": "Create lists of items under the List and delete one item among them",
+  "description": "",
+  "id": "add-and-delete-new-lists-of-items-under-the-list;create-lists-of-items-under-the-list-and-delete-one-item-among-them;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@wif"
+    }
+  ]
+});
+formatter.step({
+  "line": 8,
+  "name": "User launched the OI Shopping List app and tapped on Hamburger menu icon on left hand side screen",
+  "keyword": "Given "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 9,
+      "value": "# 3 line menu bar or Navigation icon"
+    }
+  ],
+  "line": 10,
+  "name": "Tap on the \"New list\" option under the List header",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "Enter name of new shopping list  name as \"Sainsbury\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "Add the items to list \"Grocery:Fruit:Dairy\" should be added to list and saved",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.background({
+  "line": 4,
+  "name": "app get launched choose the",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.scenario({
+  "line": 21,
+  "name": "Create lists of items under the List and delete one item among them",
+  "description": "",
+  "id": "add-and-delete-new-lists-of-items-under-the-list;create-lists-of-items-under-the-list-and-delete-one-item-among-them;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@wif"
+    }
+  ]
+});
+formatter.step({
+  "line": 8,
+  "name": "User launched the OI Shopping List app and tapped on Hamburger menu icon on left hand side screen",
+  "keyword": "Given "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 9,
+      "value": "# 3 line menu bar or Navigation icon"
+    }
+  ],
+  "line": 10,
+  "name": "Tap on the \"New list\" option under the List header",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "Enter name of new shopping list  name as \"Tesco\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "Add the items to list \"Grocery:Fruit:Dairy\" should be added to list and saved",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.background({
+  "line": 4,
+  "name": "app get launched choose the",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.scenario({
+  "line": 22,
+  "name": "Create lists of items under the List and delete one item among them",
+  "description": "",
+  "id": "add-and-delete-new-lists-of-items-under-the-list;create-lists-of-items-under-the-list-and-delete-one-item-among-them;;4",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@wif"
+    }
+  ]
+});
+formatter.step({
+  "line": 8,
+  "name": "User launched the OI Shopping List app and tapped on Hamburger menu icon on left hand side screen",
+  "keyword": "Given "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 9,
+      "value": "# 3 line menu bar or Navigation icon"
+    }
+  ],
+  "line": 10,
+  "name": "Tap on the \"New list\" option under the List header",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "Enter name of new shopping list  name as \"\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 12,
+  "name": "Add the items to list \"Dairy:Milk:Chocolate\" should be added to list and saved",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.scenarioOutline({
+  "line": 25,
+  "name": "Adding new items list, sorting and validating the list of items",
+  "description": "",
+  "id": "add-and-delete-new-lists-of-items-under-the-list;adding-new-items-list,-sorting-and-validating-the-list-of-items",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 26,
+  "name": "User launched the OI Shopping List app and tapped on Hamburger menu icon on left hand side screen",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 27,
+  "name": "Tap on the \"New list\" option under the List header",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 28,
+  "name": "Enter name of new shopping list  name as \"\u003cList\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 29,
+  "name": "Add the items to list \"\u003cItems\u003e\" should be added to list and saved",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 30,
+  "name": "Select the \"Settings\" option",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 31,
+  "name": "User select the \"Sort order\" option",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 32,
+  "name": "Select \"alphabetical\" option",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 33,
+  "name": "Return to the \"Home Screen\" by tapping the \"Back button\" of mobile device",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 34,
+  "name": "Tap on the Hamburger menu icon on left hand side screen",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 35,
+  "name": "Tap on the \"Iceland\" list",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 36,
+  "name": "The Items should be displayed in chosen sorting oder",
+  "keyword": "Then "
+});
+formatter.examples({
+  "line": 37,
+  "name": "",
+  "description": "",
+  "id": "add-and-delete-new-lists-of-items-under-the-list;adding-new-items-list,-sorting-and-validating-the-list-of-items;",
+  "rows": [
+    {
+      "cells": [
+        "List",
+        "Items"
+      ],
+      "line": 38,
+      "id": "add-and-delete-new-lists-of-items-under-the-list;adding-new-items-list,-sorting-and-validating-the-list-of-items;;1"
+    },
+    {
+      "cells": [
+        "Iceland",
+        "Grocery:Fruit:Dairy"
+      ],
+      "line": 39,
+      "id": "add-and-delete-new-lists-of-items-under-the-list;adding-new-items-list,-sorting-and-validating-the-list-of-items;;2"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.background({
+  "line": 4,
+  "name": "app get launched choose the",
+  "description": "",
+  "type": "background",
+  "keyword": "Background"
+});
+formatter.scenario({
+  "line": 39,
+  "name": "Adding new items list, sorting and validating the list of items",
+  "description": "",
+  "id": "add-and-delete-new-lists-of-items-under-the-list;adding-new-items-list,-sorting-and-validating-the-list-of-items;;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 1,
+      "name": "@wif"
+    }
+  ]
+});
+formatter.step({
+  "line": 26,
+  "name": "User launched the OI Shopping List app and tapped on Hamburger menu icon on left hand side screen",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 27,
+  "name": "Tap on the \"New list\" option under the List header",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 28,
+  "name": "Enter name of new shopping list  name as \"Iceland\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 29,
+  "name": "Add the items to list \"Grocery:Fruit:Dairy\" should be added to list and saved",
+  "matchedColumns": [
+    1
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 30,
+  "name": "Select the \"Settings\" option",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 31,
+  "name": "User select the \"Sort order\" option",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 32,
+  "name": "Select \"alphabetical\" option",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 33,
+  "name": "Return to the \"Home Screen\" by tapping the \"Back button\" of mobile device",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 34,
+  "name": "Tap on the Hamburger menu icon on left hand side screen",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 35,
+  "name": "Tap on the \"Iceland\" list",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 36,
+  "name": "The Items should be displayed in chosen sorting oder",
+  "keyword": "Then "
 });
 formatter.match({});
 formatter.result({

@@ -1,81 +1,74 @@
 package Step_definitions;
 
 import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.nativekey.AndroidKey;
 import io.appium.java_client.android.nativekey.KeyEvent;
+import org.junit.Assert;
+
+import java.util.concurrent.TimeUnit;
 
 public class Scenario2_Steps extends BaseClass {
 
-
-    @Given("^User landed on the Home Screen of OI Shopping List app and tapped on Overflow menu icon on the right hand side screen$")
+    @When("^User landed on the Home Screen of OI Shopping List app and tapped on Overflow menu icon on the right hand side screen$")
     public void user_landed_on_the_Home_Screen_of_OI_Shopping_List_app_and_tapped_on_Overflow_menu_icon_on_the_right_hand_side_screen() throws Throwable {
-        driver.findElementByAccessibilityId("More options").click();
 
+        if (driver == null) {
+            super.setup();
+            driver = super.getDriver();
+        }
+        driver.findElementByAccessibilityId("More options").click();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @And("^Select the \"([^\"]*)\" option$")
     public void select_the_option(String arg1) throws Throwable {
-        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.RelativeLayout/android.widget.TextView").click();
+        driver.findElementByXPath("//android.widget.TextView[@text = 'Settings']").click();
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 
     @When("^User select the \"([^\"]*)\" option$")
     public void user_select_the_option(String arg1) throws Throwable {
-        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.ListView/android.widget.LinearLayout[2]/android.widget.RelativeLayout/android.widget.TextView[1]").click();
+        driver.findElementByXPath("//android.widget.TextView[@text = 'Sort order']").click();
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
     }
 
     @And("^Select \"([^\"]*)\" option$")
     public void select_option(String arg1) throws Throwable {
-        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.CheckedTextView[2]").click();
+        driver.findElementByXPath("//android.widget.CheckedTextView[@text = 'alphabetical']").click();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
+
 
     @And("^Return to the \"([^\"]*)\" by tapping the \"([^\"]*)\" of mobile device$")
     public void return_to_the_by_tapping_the_of_mobile_device(String arg1, String arg2) throws Throwable {
         driver.pressKey(new KeyEvent(AndroidKey.BACK));
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @When("^Tap on the Hamburger menu icon on left hand side screen$")
     public void tap_on_the_Hamburger_menu_icon_on_left_hand_side_screen() throws Throwable {
         driver.findElementByAccessibilityId("Open navigation drawer").click();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @When("^Tap on the \"([^\"]*)\" list$")
     public void tap_on_the_list(String arg1) throws Throwable {
-        driver.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.support.v4.widget.DrawerLayout/android.widget.ListView/android.widget.FrameLayout[1]/android.widget.TextView").click();
+        driver.findElementByXPath("android.widget.TextView[@text = 'Iceland']").click();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
     @Then("^The Items should be displayed in chosen sorting oder$")
     public void the_Items_should_be_displayed_in_chosen_sorting_oder() throws Throwable {
-
-//for{
-        //{Assert.assetEquals(driver.findElementByXpath("//android.widget.TextView[@text= str]").getText, map.get(strr)")');
-
-        //Assert.assetEquals(driver.findElementByXpath("//android.widget.TextView[@text='Cel1']").getText, "data.get(0).get(2)")');
-
-        //Assert.assetEquals(driver.findElementByXpath("//android.Need to verify .TextView[@text='Del1']").getText, "data.get(0).get(2)")');
-/**
-
- //  for (int i = 0; i < strArray.length; i++)
- List<String> myList = new ArrayList<String>();
- Map<String,String> strgmap = new Map<String,String>();
- for (String str : Items) {
- driver.findElementById("org.openintents.shopping:id/autocomplete_add_item").sendKeys(str);
- driver.findElementById("org.openintents.shopping:id/button_add_item").click();
- myList.add(str);
- strgmap.put(str ,str);
-
- System.out.println(str);
- System.out.println(myList.get(0));
- }
- for(String strr: myList)
- {
- String testvalue=strgmap.get(strr);
- String exactvalue=strr;
- }
- System.out.println(myList.size());
- }
- */
+        MobileElement el1 = (MobileElement) driver.findElementByXPath("//android.widget.TextView[@text = 'Laptop']");
+        Assert.assertEquals(el1.getText(), "LapTop");
+        MobileElement el2 = (MobileElement) driver.findElementByXPath("//android.widget.TextView[@text ='Mobile']");
+        Assert.assertEquals(el2.getText(), "Mobile");
+        MobileElement el3 = (MobileElement) driver.findElementByXPath("//android.Need to verify .TextView[@text ='Watch']");
+        Assert.assertEquals(el3.getText(), "Watch");
     }
+
 }
+
